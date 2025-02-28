@@ -21,6 +21,7 @@ import {
 import { Link } from "react-router-dom";
 import { ProfileInfoCard, MessageCard } from "@/widgets/cards";
 import { platformSettingsData, conversationsData, projectsData } from "@/data";
+// import { DialogDefault } from "@/widgets/dialogs/dialog-default";
 
 export function Profile() {
   return (
@@ -74,6 +75,7 @@ export function Profile() {
             <div>
               <Typography variant="h6" color="blue-gray" className="mb-3">
                 Platform Settings
+                {/* <DialogDefault /> */}
               </Typography>
               <div className="flex flex-col gap-12">
                 {platformSettingsData.map(({ title, options }) => (
